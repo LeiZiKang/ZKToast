@@ -79,5 +79,5 @@ struct ContentView: View {
 
 ```
 
-### Inspired by [kavsoft](kavsoft.dev)
+### Inspired by [kavsoft](https://kavsoft.dev/)
 
