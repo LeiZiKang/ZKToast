@@ -121,7 +121,7 @@ extension View {
     @ViewBuilder
    public func interactiveToasts(_ toasts: Binding<[Toast]>) -> some View {
         self
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .frame(maxWidth: .infinity, maxHeight: .infinity) // !!!: you can change it appear from the top
             .overlay(alignment: .bottom) {
                 ToastsView(toasts: toasts)
             }
