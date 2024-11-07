@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DDA816402CDCD511008ACDE8 /* ZKToast in Frameworks */ = {isa = PBXBuildFile; productRef = DDA8163F2CDCD511008ACDE8 /* ZKToast */; };
-		DDA816422CDCD5CE008ACDE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DDA816412CDCD5CE008ACDE8 /* README.md */; };
+		DDA816442CDCD780008ACDE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DDA816432CDCD780008ACDE8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDA8161E2CDBC613008ACDE8 /* ZKToastSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKToastSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDA816412CDCD5CE008ACDE8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DDA816432CDCD780008ACDE8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -39,7 +39,7 @@
 		DDA816152CDBC613008ACDE8 = {
 			isa = PBXGroup;
 			children = (
-				DDA816412CDCD5CE008ACDE8 /* README.md */,
+				DDA816432CDCD780008ACDE8 /* README.md */,
 				DDA816202CDBC613008ACDE8 /* ZKToastSwiftUI */,
 				DDA8161F2CDBC613008ACDE8 /* Products */,
 			);
@@ -121,7 +121,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA816422CDCD5CE008ACDE8 /* README.md in Resources */,
+				DDA816442CDCD780008ACDE8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
