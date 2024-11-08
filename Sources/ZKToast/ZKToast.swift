@@ -20,7 +20,7 @@ public struct Toast: Identifiable {
     }
     
     var offsetX: CGFloat = 0
-    var isDeleting: Bool = false
+    public var isDeleting: Bool = false
 }
 
 
