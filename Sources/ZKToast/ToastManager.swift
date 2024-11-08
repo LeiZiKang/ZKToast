@@ -12,14 +12,9 @@ import ZKToast
 public final class ToastManager: ObservableObject {
     
     @MainActor
-    @Published
-    public var toasts: [Toast] = []
-
-   
+    @Published public var toasts: [Toast] = []
     
-    public init() {
-       
-    }
+    public init() {}
     
     
     @MainActor
@@ -27,7 +22,7 @@ public final class ToastManager: ObservableObject {
         withAnimation {
             let toast = Toast { id in
                 HStack(spacing: 12) {
-
+                    
                     AnyView(content())
                     
                     Spacer(minLength: 0)
@@ -60,12 +55,19 @@ public final class ToastManager: ObservableObject {
     
     
     @MainActor
-    public func deleteToast(_ id: String) {
+    func deleteToast(_ id: String) {
         if let index = self.toasts.firstIndex(where: { $0.id == id }) {
             self.toasts[index].isDeleting = true
         }
         withAnimation {
             self.toasts.removeAll(where: { $0.id == id })
+        }
+    }
+    
+    @MainActor
+    public func removeAll() {
+        withAnimation {
+            self.toasts.removeAll()
         }
     }
 }
